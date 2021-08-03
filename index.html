@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<title>data record</title>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="customJS.js"></script>
+</head>
+<body>
+<img src="csi-logo.png" width="300" height="300">
+   
+       <form id="frm">
+            <fieldset>
+                <legend align="left"><h1>INFORMATION</h1></legend>
+		        <h2><u>ENTER DETAILS:</u></h2>
+				<p>
+                    Name:
+				    <input id="name" type="text" maxlength="20" name="Name">
+                </p>
+				<p>
+                    Roll No:
+				    <input id="rollno"  type="number" min="1000000000" max="9999999999"></p>	
+			    <p>
+                    Branch:
+				    <select id="branch" branch>
+					   <option value="CS">CS</option>
+					   <option value="IT">IT</option>
+					   <option value="ECE">ECE</option>
+					   <option value="EN">EN</option>
+					   <option value="EI">EI</option>
+					   <option value="ME">ME</option>
+					   <option value="CE">CE</option>
+				    </select>
+                </p> 
+       	        <h2><u>ENTER MARKS:</u></h2>
+				<div id="main">	
+                  <div>				
+			          <p>Sub1:</p>
+			          <p><input value="0" type="number" min="0" max="100"></p>
+				  </div>
+                  <div>					
+			          <p>Sub2:</p>
+			          <p><input value="0" type="number" min="0" max="100" ></p>
+			      </div>
+                  <div>				
+			          <p>Sub3:</p>
+			          <p><input value="0" type="number" min="0" max="100" ></p>
+				 </div>
+				 <div>
+			          <p>Sub4:</p>
+			          <p><input  value="0" type="number" min="0" max="100"></p>
+				 </div>
+				 <div>				
+			          <p>Sub5:</p>
+			          <p><input value="0" type="number" min="0" max="100"></p>
+				 </div>
+				</div>
+			    <p>
+                   <input onclick="compute()" type="button" value="Compute">
+                   <input onclick="add()" type="reset" value="Add">
+                   <input onclick="edit()" type="reset" value="Reset">
+                </p>
+           			
+            </fieldset>
+      </form>
+  
+  <hr>
+	<p id="demo"></p>
+	<h1 align="center">STUDENTS RECORD</h1>
+    <table id="data">
+        <tr>
+            <th>NAME</th>
+            <th>ROLL NO.</th>
+            <th>BRANCH</th>
+            <th>TOTAL MARKS</th>
+            <th>PERCENTAGE</th>
+            <th>GRADE</th>
+            <th>EDIT</th>
+        </tr>
+    </table>
+</body>
+</html>

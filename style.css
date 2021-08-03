@@ -1,0 +1,41 @@
+p
+ {
+	margin:20px;
+	font-size:19px;
+	font-family:verdana;
+ }
+body
+ {  font-family:broadway;
+	background-image:url("background-image.jpg");
+ }
+#main 
+ {
+   width: 100%;
+   margin-left: 10px;
+   margin-right: 10px;
+   display: flex;
+ }
+table, th, td
+ {  
+    font-family:arial;
+    border: 1px solid black;
+	border-collapse:collapse;
+	width:1300px;
+	text-align:center;
+ }
+ h2
+ {   
+	 color:#000099;
+	 font-family:lucida console;
+	 margin:15px;
+ }
+ th{
+	 font-family:algerian;
+ }
+ img {
+    position: absolute;
+    left: 850px;
+    top: 110px;
+    z-index: -1;
+	
+}
